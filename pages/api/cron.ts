@@ -1,4 +1,5 @@
 
+import { supabase } from '../../lib/supabase';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import { chromium } from 'playwright';
