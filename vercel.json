@@ -1,0 +1,8 @@
+{
+  "cron": {
+    "daily-screenshots": "0 2 * * *"
+  },
+  "routes": [
+    { "src": "/api/cron", "dest": "/pages/api/cron.ts" }
+  ]
+}
