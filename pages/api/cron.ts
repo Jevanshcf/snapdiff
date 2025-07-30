@@ -4,7 +4,9 @@ import { chromium } from 'playwright';
 import pixelmatch from 'pixelmatch';
 import { PNG } from 'pngjs';
 import { Resend } from 'resend';
-
+export const config = {
+  schedule: '0 2 * * *'
+};
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { data: pages } = await supabase.from('pages').select('*');
   if (!pages) return res.status(200).json({ ok: true });
