@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: { domains: [] },
-  experimental: { appDir: true }
+  appDir: true
 };
+
 module.exports = nextConfig;
